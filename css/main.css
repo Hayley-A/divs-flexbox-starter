@@ -103,30 +103,40 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
   font-size: 1em;
   height: 100%;
   background: url(../img/country-road.jpg) center no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header {
+header, main, footer{
     font-size: 1.5em;
     /*** font-family removed***/
     color: white;
     display: flex;
     justify-content: left;
     background-color: #384c5c;
-    margin-bottom: 2em;
-    margin-top: 2em;
-    padding-left: 1em;
+    width: 100%;
+    padding: 0 1em;
 }
+
+header {
+    background-color:#222;
+}
+
+strong {
+    text-decoration: underline;
+}
+
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  flex-flow: row wrap;
 }
 
 .div-1, .div-2, .div-3 {
@@ -134,13 +144,14 @@ header {
   color: #fff;
   line-height: 1.5em;
   font-size: 1.25em;
-  padding: 0 1em;
   background-color: #c5433c;
-  height: 450px;
-  display: flex;
+  height: 500px;
   width: 25%;
-  justify-content: center;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+
 }
 
 
